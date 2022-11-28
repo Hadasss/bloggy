@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TopicComponent } from './components/topic/topic.component';
 import { ItemComponent } from './components/item/item.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { ItemComponent } from './components/item/item.component';
     DashboardComponent,
     TopicComponent,
     ItemComponent,
+    ButtonComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
