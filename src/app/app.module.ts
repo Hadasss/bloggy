@@ -9,6 +9,7 @@ import { ItemComponent } from './components/item/item.component';
 import { ButtonComponent } from './components/button/button.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AddTopicComponent } from './components/add-topic/add-topic.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FooterComponent } from './components/footer/footer.component';
     ButtonComponent,
     HeaderComponent,
     FooterComponent,
+    AddTopicComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
