@@ -10,6 +10,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AddTopicComponent } from './components/add-topic/add-topic.component';
+import { AddItemComponent } from './components/add-item/add-item.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AddTopicComponent } from './components/add-topic/add-topic.component';
     HeaderComponent,
     FooterComponent,
     AddTopicComponent,
+    AddItemComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
