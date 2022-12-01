@@ -1,3 +1,11 @@
-<div class="main-container">
-  <app-dashboard></app-dashboard>
+<!-- <app-dashboard></app-dashboard> -->
+
+<app-header></app-header>
+<div class="p-5 flex justify-between">
+  <h3>Add new topic?</h3>
+  <app-button class="btn" (btnClick)="(addTopic)">Add</app-button>
 </div>
+<!-- TODO if there are topics - loop through and display topics array -->
+<!-- QUESTION where does the conditional go - in parent component or in the actual component I want to display?-->
+<app-topic></app-topic>
+<app-footer></app-footer>

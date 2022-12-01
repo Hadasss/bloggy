@@ -1,11 +1,11 @@
-<div class="m-2 border rounded-md shadow-lg card">
+<div class="m-2 border rounded-md shadow-lg card" *ngIf="!!topic">
   <div class="header">
-    <h1 class="p-4">Topic title:</h1>
+    <h1 class="p-4 text-xl font-bold">{{ topic.title }}</h1>
   </div>
 
   <div class="m-1 p-1 flex justify-start">
     <p class="mr-3 self-center">Add new topic?</p>
-    <button class="btn">Add</button>
+    <app-button></app-button>
   </div>
 
   <app-add-topic></app-add-topic>
