@@ -1,3 +1,12 @@
-<div class="main-container">
-  <app-dashboard></app-dashboard>
+<app-header></app-header>
+
+<div class="p-5 flex justify-start">
+  <h3 class="mr-3 self-center text-lg">Add new topic?</h3>
+  <app-button text="Add Topic" (btnClick)="addTopic()"></app-button>
 </div>
+
+<div class="m-5 flex flex-wrap">
+  <app-topic></app-topic>
+</div>
+
+<app-footer></app-footer>

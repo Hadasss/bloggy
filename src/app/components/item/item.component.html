@@ -1,4 +1,23 @@
 <div class="m-2 p-4 border border-black">
-  <h4>this is an item!</h4>
-  <p>would you like to add a new item?</p>
+  <div class="flex justify-between">
+    <a
+      class="text-lg hover:italic font-bold text-sky-700"
+      href="{{ item.url }}"
+      target="_blank"
+      >{{ item.name }}</a
+    >
+    <div class="flex">
+      <img
+        class="delete"
+        src="../../../assets/images/delete_FILL0_wght400_GRAD0_opsz48.svg"
+        alt=""
+      />
+      <img
+        class="edit"
+        src="../../../assets/images/edit_FILL0_wght400_GRAD0_opsz48.svg"
+        alt=""
+      />
+    </div>
+  </div>
+  <p>{{ item.comments }}</p>
 </div>
