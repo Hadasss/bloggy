@@ -1,13 +1,13 @@
-<div class="m-2 border rounded-md shadow-lg card" *ngIf="!!topic">
+<div class="m-2 border rounded-md shadow-lg card" *ngFor="let topic of topics">
   <div class="header">
     <h1 class="p-4 text-xl font-bold">{{ topic.title }}</h1>
   </div>
 
   <div class="m-1 p-1 flex justify-start">
-    <p class="mr-3 self-center">Add new topic?</p>
-    <app-button></app-button>
+    <app-item></app-item>
   </div>
-
-  <app-add-topic></app-add-topic>
-  <app-item></app-item>
+  <div class="m-1 p-1 flex justify-between">
+    <p class="mr-3 self-center">Add new item?</p>
+    <app-button text="Add Item"></app-button>
+  </div>
 </div>
