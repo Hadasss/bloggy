@@ -1,13 +1,16 @@
-<div class="m-2 border rounded-md shadow-lg card" *ngFor="let topic of topics">
+<div
+  class="container mx-auto card m-2 border rounded-md shadow-lg"
+  *ngFor="let topic of topics"
+>
   <div class="header">
     <h1 class="p-4 text-xl font-bold">{{ topic.title }}</h1>
   </div>
 
-  <div class="m-1 p-1 flex justify-start">
-    <app-item></app-item>
+  <div class="m-1 p-1 flex-wrap justify-start">
+    <app-item *ngFor="let item of items" [item]="item"></app-item>
   </div>
-  <div class="m-1 p-1 flex justify-between">
-    <p class="mr-3 self-center">Add new item?</p>
+  <div class="m-1 p-1 flex justify-start">
+    <p class="mr-3 self-center text-lg">Add new?</p>
     <app-button text="Add Item"></app-button>
   </div>
 </div>

@@ -1,11 +1,12 @@
-<!-- <app-dashboard></app-dashboard> -->
 <app-header></app-header>
 
-<div class="p-5 flex justify-between">
-  <h3>Add new topic?</h3>
+<div class="p-5 flex justify-start">
+  <h3 class="mr-3 self-center text-lg">Add new topic?</h3>
   <app-button text="Add Topic" (btnClick)="addTopic()"></app-button>
 </div>
-<!-- TODO if there are topics - loop through and display topics array -->
-<!-- QUESTION where does the conditional go - in parent component or in the actual component I want to display?-->
-<app-topic></app-topic>
+
+<div class="m-5 flex flex-wrap">
+  <app-topic></app-topic>
+</div>
+
 <app-footer></app-footer>
