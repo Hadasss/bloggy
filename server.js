@@ -1,6 +1,4 @@
-const express = require("express");
-
-const app = express();
+const app = require("./backend/app");
 
 app.get("/", (req, res) => {
   console.log("Hello World!");
