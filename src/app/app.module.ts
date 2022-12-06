@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,7 +10,6 @@ import { ItemComponent } from './components/item/item.component';
 import { ButtonComponent } from './components/button/button.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { AddTopicComponent } from './components/add-topic/add-topic.component';
 import { AddItemComponent } from './components/add-item/add-item.component';
 
 @NgModule({
@@ -20,10 +20,9 @@ import { AddItemComponent } from './components/add-item/add-item.component';
     ButtonComponent,
     HeaderComponent,
     FooterComponent,
-    AddTopicComponent,
     AddItemComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
